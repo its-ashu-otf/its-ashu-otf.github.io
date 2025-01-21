@@ -75,8 +75,8 @@ paginate = 5
     [languages.en.params]
       subtitle = "A place where i share my knowlegde and work to the world."
       owner = "its-ashu-otf"
-      keywords = ""
-      copyright = ""
+      keywords = "Ashu's Blog"
+      copyright = "All Rights Reserved"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
