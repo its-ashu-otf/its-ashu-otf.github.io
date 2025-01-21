@@ -54,7 +54,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Delete existing content and add the public folder
+          # Ensure public directory exists
+          if [ ! -d "public" ]; then
+            echo "Error: 'public' directory not found. Check your Hugo build step."
+            exit 1
+          fi
+
+          # Clean up existing files and copy new files
           rm -rf *
           cp -r public/* .
           git add .
