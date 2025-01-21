@@ -70,7 +70,7 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Ashu's Blog"
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -88,15 +88,19 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "~/ashu"
         logoHomeLink = "/"
 
       [languages.en.menu]
         [[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about"
+          identifier = "blog"
+          name = "Blog"
+          url = "/blog"
         [[languages.en.menu.main]]
+          identifier = "about"
+          name = "about"
+          url = "/about"
+	[[languages.en.menu.main]]
           identifier = "showcase"
           name = "Showcase"
           url = "/showcase"
