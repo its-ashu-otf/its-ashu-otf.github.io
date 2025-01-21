@@ -1,4 +1,4 @@
-baseurl = "https://its-ashu-otf.github.io/website/"
+baseurl = "https://its-ashu-otf.github.io"
 languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
@@ -92,10 +92,6 @@ paginate = 5
         logoHomeLink = "/"
 
       [languages.en.menu]
-        [[languages.en.menu.main]]
-          identifier = "home"
-          name = "Home"
-          url = "/home/welcome"
 	[[languages.en.menu.main]]
           identifier = "about"
           name = "About"
