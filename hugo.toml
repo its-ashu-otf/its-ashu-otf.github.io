@@ -73,7 +73,7 @@ paginate = 5
     title = "Ashu's Blog"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
+      subtitle = "A place where i share my knowlegde and work to the world."
       owner = ""
       keywords = ""
       copyright = ""
