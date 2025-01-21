@@ -8,7 +8,7 @@ paginate = 5
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  contentTypeName = "home"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 5
@@ -89,7 +89,7 @@ paginate = 5
 
       [languages.en.params.logo]
         logoText = "~/ashu"
-        logoHomeLink = "/website/home/welcome"
+        logoHomeLink = "/"
 
       [languages.en.menu]
         [[languages.en.menu.main]]
