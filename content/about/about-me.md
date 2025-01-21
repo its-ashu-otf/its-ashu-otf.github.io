@@ -24,7 +24,7 @@ I write about cybersecurity tips, real-world attacks, and how to secure your sys
 - [GitHub](https://github.com/its-ashu-otf)  
 - [LinkedIn](https://linkedin.com/in/your-profile) 
 - [Instagram](https://instagram.com/its_ashu_otf)
-- [X](https://x.com/its_ashu_otf)
+- [Twitter](https://x.com/its_ashu_otf)
 
 ## Hire me
 
