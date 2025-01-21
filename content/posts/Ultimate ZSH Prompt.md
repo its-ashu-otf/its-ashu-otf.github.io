@@ -15,7 +15,7 @@ The `.zshrc` file is a script that runs every time a new terminal session is s
 
 This sets up myZSH for you. It will backup your current .zshrc if you already have one.
 
-```zsh
+```bash
 curl -fsSL https://raw.githubusercontent.com/its-ashu-otf/myZSH/main/Install-myZSH.sh | bash
 ```
 
