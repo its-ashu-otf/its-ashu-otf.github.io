@@ -93,6 +93,10 @@ paginate = 5
 
       [languages.en.menu]
         [[languages.en.menu.main]]
+          identifier = "home"
+          name = "Home"
+          url = "/home/welcome"
+	[[languages.en.menu.main]]
           identifier = "about"
           name = "About"
           url = "/about/about-me"
