@@ -8,7 +8,7 @@ paginate = 5
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "home"
+  contentTypeName = "/home/welcome"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 5
@@ -70,12 +70,12 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Ashu's Blog"
+    title = "Ashu's 0Day Arsenal"
 
     [languages.en.params]
-      subtitle = "A place where i share my knowlegde and work to the world."
+      subtitle = "The Arsenal for Ethical Hackers and Cyber Defenders"
       owner = "its-ashu-otf"
-      keywords = "Ashu's Blog"
+      keywords = "Ashu's 0Day Arsenal"
       copyright = "All Rights Reserved"
       menuMore = "Show more"
       readMore = "Read more"
@@ -101,7 +101,7 @@ paginate = 5
           name = "About"
           url = "/about/about-me"
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+          identifier = "projects"
+          name = "Projects"
+          url = "/projects"
 
