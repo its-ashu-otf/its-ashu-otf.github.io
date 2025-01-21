@@ -60,7 +60,3 @@ As this is an ongoing project, I welcome feedback, suggestions, and contribution
 ### **Call to Action**
 
 "Are you tired of weak passwords and insecure data leaks? Join me in building **PassHaven**, a password manager built with security in mind. Star the repo, contribute to the project, or simply share your thoughts!"
-
----
-
-What do you think? Let me know if you'd like me to adjust this! 😊
