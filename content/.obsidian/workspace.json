@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/about-me.md",
+                "file": "posts/home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about-me"
+              "title": "home"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about/about-me.md",
+                "file": "posts/home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for about-me"
+              "title": "Backlinks for home"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about/about-me.md",
+                "file": "posts/home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from about-me"
+              "title": "Outgoing links from home"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about/about-me.md"
+                "file": "posts/home.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of about-me"
+              "title": "Outline of home"
             }
           }
         ]
@@ -164,7 +164,9 @@
   },
   "active": "e5f39165db6ade41",
   "lastOpenFiles": [
-    "itsashuotf@gmail.com.md",
-    "about/about-me.md"
+    "showcase/showcase.md",
+    "about/about-me.md",
+    "posts/home.md",
+    "itsashuotf@gmail.com.md"
   ]
 }
