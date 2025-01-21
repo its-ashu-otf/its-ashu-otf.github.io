@@ -89,7 +89,7 @@ paginate = 5
 
       [languages.en.params.logo]
         logoText = "~/ashu"
-        logoHomeLink = "/home"
+        logoHomeLink = "/home/welcome"
 
       [languages.en.menu]
         [[languages.en.menu.main]]
