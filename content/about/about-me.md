@@ -8,6 +8,11 @@
 - **Programming**: Python, Bash Scripting, Batch Scripting, C/C++, C# , HTML, CSS and Powershell  
 - **Frameworks**: OWASP Top 10 
 
+## Education
+
+- SSC from St. John English High School
+- HSC from Thakur College of Commerce & Science
+- Bachelor Of Science in Information Technology from Nirmala Memorial Foundation
 ## Certifications
 - Python 
 - Certified Cyber Security and Ethical Hacker
