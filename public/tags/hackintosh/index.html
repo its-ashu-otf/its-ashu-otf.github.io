@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackintosh | Ashu&#39;s 0Day Arsenal</title>
+
+    
+  
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  
+
+
+<link rel="canonical" href="http://localhost:1313/tags/hackintosh/" />
+
+
+
+<meta name="author" content="Ashutosh Gupta" />
+<meta name="description" content="Ashu&#39;s Personal Blog" />
+
+
+
+<meta name="generator" content="Hugo 0.141.0">
+
+
+<meta property="og:url" content="http://localhost:1313/tags/hackintosh/">
+  <meta property="og:site_name" content="Ashu&#39;s 0Day Arsenal">
+  <meta property="og:title" content="Hackintosh">
+  <meta property="og:description" content="Ashu&#39;s Personal Blog">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/me/background.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/me/background.jpg">
+  <meta name="twitter:title" content="Hackintosh">
+  <meta name="twitter:description" content="Ashu&#39;s Personal Blog">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/me/yy.jpg" alt="Ashu&#39;s 0Day Arsenal" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          Ashu&#39;s 0Day Arsenal
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">The Arsenal for Ethical Hackers and Cyber Defenders</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+
+<div class="flex flex-col md:flex-row mt-4">
+
+  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
+    <h1 class="text-2xl">Hackintosh</h1>
+    <p class="text-sm">1 article</p>
+    <div class="flex flex-wrap gap-4 mt-6">
+      
+
+      
+      
+      <a href="/tags/amd/" class="badge h-6 no-underline hover:badge-primary">
+        Amd
+      </a>
+      
+      
+      
+      <span class="badge h-6 badge-primary">
+        Hackintosh
+      </span>
+      
+      
+      
+      <a href="/tags/hackintoshamdlaptop/" class="badge h-6 no-underline hover:badge-primary">
+        Hackintoshamdlaptop
+      </a>
+      
+      
+      
+      <a href="/tags/mac0s/" class="badge h-6 no-underline hover:badge-primary">
+        Mac0S
+      </a>
+      
+      
+      
+      <a href="/tags/myzsh/" class="badge h-6 no-underline hover:badge-primary">
+        MyZSH
+      </a>
+      
+      
+      
+      <a href="/tags/zsh/" class="badge h-6 no-underline hover:badge-primary">
+        Zsh
+      </a>
+      
+      
+      
+      <a href="/tags/zsh-prompt/" class="badge h-6 no-underline hover:badge-primary">
+        Zsh-Prompt
+      </a>
+      
+      
+      
+      <a href="/tags/zshconfig/" class="badge h-6 no-underline hover:badge-primary">
+        Zshconfig
+      </a>
+      
+      
+    </div>
+  </div>
+  
+  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
+  
+  <div class="flex-1">
+    
+
+    
+    <div class="dream-grid">
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/hackintosh-on-amd-laptop/">
+  
+  <figure>
+    
+    <img src="/img/cover.jpg" alt="Hackintosh on AMD Laptop" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Hackintosh on AMD Laptop</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2025-01-23T23:22:35&#43;05:30</span>
+    
+    </p>
+
+    <hr>
+<!-- raw HTML omitted -->
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#specifications">Specifications</a>
+</li>
+<li><a href="#whats-working">What&rsquo;s Working</a>
+</li>
+<li><a href="#whats-not-working">What&rsquo;s not Working</a>
+</li>
+<li><a href="#bios-options">Bios Options</a>
+</li>
+<li><a href="#kexts-used">Kexts Used</a>
+</li>
+<li><a href="#ssdts-used">SSDTs Used</a>
+</li>
+<li><a href="#credits">Credits</a>
+</li>
+<li><a href="#useful-apps--scripts">Useful Apps &amp; Scripts</a>
+</li>
+<li><a href="#screenshots">Screenshots</a>
+</li>
+</ul>
+<h2 id="specifications">Specifications</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Info</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Model</td>
+          <td>Alpha 15 B5EEK</td>
+      </tr>
+      <tr>
+          <td>Bios Version</td>
+          <td>E158LAMS.10B</td>
+      </tr>
+      <tr>
+          <td>CPU</td>
+          <td>AMD Ryzen™ 7 5800H Processor</td>
+      </tr>
+      <tr>
+          <td>DGPU</td>
+          <td>AMD Radeon RX 6600M 8GB</td>
+      </tr>
+      <tr>
+          <td>RAM</td>
+          <td>40GB Kingston DDR4 3200 MHz</td>
+      </tr>
+      <tr>
+          <td>NVMe</td>
+          <td>Kingston SNV2S1000G 500GB for macOS / WD 512gb for Windows 11</td>
+      </tr>
+      <tr>
+          <td>Ethernet</td>
+          <td>Realtek RTL8111</td>
+      </tr>
+      <tr>
+          <td>Audio</td>
+          <td>Realtek ALC287</td>
+      </tr>
+      <tr>
+          <td>LCD Panel</td>
+          <td>15.6 FHD IPS 144Hz</td>
+      </tr>
+      <tr>
+          <td>Opencore Version</td>
+          <td>1.0.1 (DEV)</td>
+      </tr>
+      <tr>
+          <td>SMBIOS used</td>
+          <td>MacBookPro16,3 (Need to enter your information generated by <a href="http://https://github.com/corpnewt/GenSMBIOS" title="GenSMBIOS" target="_blank">GenSMBIOS</a>
+)</td>
+      </tr>
+      <tr>
+          <td>Target MacOS Version</td>
+          <td>macOS Sonoma 14.5 <!-- raw HTML omitted --><em>- For macOS Sonoma 14.5 Update: Temporary disable BlueToolFixup.kext, restart and run on Terminal: sudo softwareupdate -i -a -R</em><!-- raw HTML omitted --><em>- To update to MacOS Sonoma 14.4, you need to set config.plist &gt; Misc &gt; Security &gt; SecureBootModel to Disabled</em></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="whats-working">What&rsquo;s Working</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Status</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>CPU</td>
+          <td>✅</td>
+          <td>AMD Vanilla Kernel Patches (<a href="https://github.com/AMD-OSX/AMD_Vanilla" target="_blank">Modify according to yours Core Count</a>
+)</td>
+      </tr>
+      <tr>
+          <td>DGPU</td>
+          <td>✅</td>
+          <td>With some DeviceProperties</td>
+      </tr>
+      <tr>
+          <td>Brightness Control</td>
+          <td>✅</td>
+          <td>Workaround with <a href="https://lunar.fyi/" title="Lunar app" target="_blank">Lunar app</a>
+</td>
+      </tr>
+      <tr>
+          <td>HDMI A/V out</td>
+          <td>✅</td>
+          <td>Tested and working in 4K 60Hz Monitor </td>
+      </tr>
+      <tr>
+          <td>USB</td>
+          <td>✅</td>
+          <td>All ports working with <strong><a href="https://github.com/RattletraPM/GUX-RyzenXHCIFix" title="GUX-RyzenXHCIFix" target="_blank">GUX-RyzenXHCIFix</a>
+</strong> / <a href="https://github.com/corpnewt/USBMap" title="USBMap" target="_blank">USBMap</a>
+</td>
+      </tr>
+      <tr>
+          <td>Keyboard</td>
+          <td>✅</td>
+          <td>Voodoops2controller Kext + <a href="https://karabiner-elements.pqrs.org/" title="Karabiner-Elements app" target="_blank">Karabiner-Elements app</a>
+ for mapping</td>
+      </tr>
+      <tr>
+          <td>Audio</td>
+          <td>✅</td>
+          <td>AppleALC kext working with layout-id 21</td>
+      </tr>
+      <tr>
+          <td>P2 Mic</td>
+          <td>✅</td>
+          <td>Working with AppleALC 1.8.8</td>
+      </tr>
+      <tr>
+          <td>Trackpad</td>
+          <td>✅</td>
+          <td>VoodooI2C</td>
+      </tr>
+      <tr>
+          <td>Ethernet</td>
+          <td>✅</td>
+          <td>RealtekRTL8111 Kext</td>
+      </tr>
+      <tr>
+          <td>Intel WIFI</td>
+          <td>✅</td>
+          <td>AirportItlwm Sonoma 14.4 Alpha Kext</td>
+      </tr>
+      <tr>
+          <td>Bluetooth</td>
+          <td>✅</td>
+          <td>From Intel AX210 with IntelBluetoothFirmware.kext + BlueToolFixup Kext</td>
+      </tr>
+      <tr>
+          <td>Battery</td>
+          <td>✅</td>
+          <td>VoodooBatteryStatus Kext</td>
+      </tr>
+      <tr>
+          <td>AppleTV+ DRM</td>
+          <td>✅</td>
+          <td>Work with CFG_LINK_FIXED_MAP=1 (produces a series of GPU-related messages/warnings in the boot log)</td>
+      </tr>
+      <tr>
+          <td>iServices</td>
+          <td>✅</td>
+          <td>Message/Facetime tested and working</td>
+      </tr>
+      <tr>
+          <td>Shutdown/Reboot</td>
+          <td>✅</td>
+          <td> </td>
+      </tr>
+      <tr>
+          <td>Sleep/Wake</td>
+          <td>✅</td>
+          <td>Finally working with Seey6 <a href="https://github.com/Seey6/CpuTscSync" title="CpuTscSync" target="_blank">CpuTscSync</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="whats-not-working">What&rsquo;s not Working</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Status</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Display integrated to iGPU</td>
+          <td>❌</td>
+          <td>Display output only works through DP/HDMI with 6600M as this laptop lacks MUX Switch.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="bios-options">Bios Options</h2>
+<ul>
+<li><strong>Only Discrete</strong> GPU</li>
+<li>Secure Boot <strong>Disabled</strong></li>
+</ul>
+<h2 id="kexts-used">Kexts Used</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Kext</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="https://github.com/trulyspinach/SMCAMDProcessor" target="_blank">AMDRyzenCPUPowerManagement.kext</a>
+</td>
+          <td>Power management and monitoring of AMD processors</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/AppleALC" target="_blank">AppleALC.kext</a>
+</td>
+          <td>Native macOS HD audio for not officially supported codecs</td>
+      </tr>
+      <tr>
+          <td><a href="https://files.amd-osx.com/AppleMCEReporterDisabler.kext.zip" target="_blank">AppleMCEReporterDisabler.kext</a>
+</td>
+          <td>Disables AppleIntelMCEReporter which causes panics on AMD CPUs</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/BrcmPatchRAM" target="_blank">BlueToolFixup.kext</a>
+</td>
+          <td>Patches Bluetooth stack to allow non-Apple Bluetooth</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/Seey6/CpuTscSync" title="CpuTscSync" target="_blank">CpuTscSync</a>
+</td>
+          <td>It is a Lilu plugin, modify from CpuTscSync. It should solve some wake issues for AMD Mobile</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/RattletraPM/GUX-RyzenXHCIFix" target="_blank">GUX-RyzenXHCIFix</a>
+</td>
+          <td>A fork of GenericUSBXHCI aimed at analyzing and fixing the USB3</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/Lilu" target="_blank">Lilu.kext</a>
+</td>
+          <td>Platform for arbitrary kext, library, and program patching throughout the system</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/NVMeFix" target="_blank">NVMeFix.kext</a>
+</td>
+          <td>Improve compatibility with non-Apple SSDs</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/aluveitie/RadeonSensor" target="_blank">RadeonSensor.kext</a>
+</td>
+          <td>Monitoring Radeon GPU temperature on macOS</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/Mieze/RTL8111_driver_for_OS_X" target="_blank">RealtekRTL8111.kext</a>
+</td>
+          <td>Open source driver for the Realtek RTL8111/8168 family</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/RestrictEvents" target="_blank">RestrictEvents.kext</a>
+</td>
+          <td>Blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/trulyspinach/SMCAMDProcessor" target="_blank">SMCAMDProcessor.kext</a>
+</td>
+          <td>Power management and monitoring of AMD processors</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/VirtualSMC" target="_blank">SMCBatteryManager.kext</a>
+</td>
+          <td>Enables battery readings</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/corpnewt/USBMap" title="USBMap" target="_blank">USBMap</a>
+</td>
+          <td>Python script for mapping USB ports in macOS and creating a custom injector kext</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/osy/USBWakeFixup" target="_blank">USBWakeFixup</a>
+</td>
+          <td>Fix a certain USB wakeup issue on OSX</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/VirtualSMC" target="_blank">VirtualSMC.kext</a>
+</td>
+          <td>Advanced Apple SMC emulator in the kernel</td>
+      </tr>
+      <tr>
+          <td><a href="https://chefkissinc.github.io/Extras/Kexts/VoodooI2C.zip" target="_blank">VoodooI2C.kext &amp; VoodooU2CHID.kext</a>
+</td>
+          <td>Fixes trackpad</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/acidanthera/VoodooPS2" target="_blank">VoodooPS2Controller.kext</a>
+</td>
+          <td>Fixes keyboard</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="ssdts-used">SSDTs Used</h2>
+<p>Done with <a href="https://github.com/corpnewt/SSDTTime" target="_blank">SSDTTime</a>
+ in Windows 11</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">its-ashu-otf</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>5 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Ashu&#39;s 0Day Arsenal
+  </p>
+  
+
+  
+  <p>Website Made by @its-ashu-otf :: All Right's Reserved ©</p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>👋  Hi, I’m Ashutosh Gupta from Mumbai.<br>
+👀  I’m Studying Cyber Security.<br>
+🧠  I’m Currently Learning Securing Windows, Linux Systems, Red Teaming and Web Application Pentesting.</p>
+<h2 id="hobbies">Hobbies</h2>
+<p>🎮  When I’m not pentesting or studying, I love playing FPS and story games also exploring tech blogs.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Skills &amp; Tools</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li><strong>Operating Systems</strong>: Windows, Linux, Android  and macOS</li>
+<li><strong>Pentesting Tools</strong>: Burp Suite, Metasploit, Nmap, Wireshark</li>
+<li><strong>Programming</strong>: Python, Bash Scripting, Batch Scripting, C/C++, C# , HTML, CSS and Powershell</li>
+<li><strong>Frameworks</strong>: OWASP Top 10</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Education</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>SSC from St. John English High School</li>
+<li>HSC from Thakur College of Commerce &amp; Science</li>
+<li>Bachelor Of Science in Information Technology from Nirmala Memorial Foundation</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Certifications</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>Python</li>
+<li>Certified Cyber Security and Ethical Hacker</li>
+<li>Certified Ethical Hacker v13 (CEHv13) (In Progress)</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+  <li>
+    <a href="mailto:its-ashu-otf@gmail.com" title="Email">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+  </li>
+  
+
+  
+  <li>
+    <a href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://x.com/its_ashu_otf" target="_blank" title="X">
+      <ion-icon name="logo-x"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://instagram.com/its_ashu_otf" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Ashu&#39;s 0Day Arsenal
+  </p>
+  
+
+  
+  <p>Website Made by @its-ashu-otf :: All Right's Reserved ©</p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "light"
+  window.darkTheme = "dark"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "en" }).toFormat("yyyy-MM-dd")
+    })
+  }
+</script>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

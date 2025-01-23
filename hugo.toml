@@ -1,103 +1,71 @@
-baseurl = "https://its-ashu-otf.github.io"
+baseURL = 'https://its-ashu-otf.github.io/'
+
+title = "Ashu's 0Day Arsenal"
+
+theme = "dream"
+
 languageCode = "en-us"
-# Add it only if you keep the theme in the `themes` directory.
-# Remove it if you use the theme as a remote Hugo Module.
-theme = "terminal"
-paginate = 5
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+#zenMode = true
+ 
+lightTheme = "light"
+darkTheme = "dark"
+ 
+# backgroundImage = "me/background.jpg"
+# backgroundImageDark = ""
+ 
+images = ["me/background.jpg"]
+ 
+author = "Ashutosh Gupta"
+description = "Ashu's Personal Blog"
+avatar = "me/ashu.jpg"
+headerTitle = "Ashu's 0Day Arsenal"
+motto = "The Arsenal for Ethical Hackers and Cyber Defenders"
+ 
+footerBottomText = "Website Made by @its-ashu-otf :: All Right's Reserved ©"
+ 
+rss = false
+ 
+utterancesRepo = "its-ashu-otf/its-ashu-otf.github.io"
+ 
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+ 
+# waline = true
+# walineServer = ""
+ 
+email = "its-ashu-otf@gmail.com"
+ 
+siteStartYear = 2025
+ 
+favicon = "favicon.ico"
+ 
+# Syntax highlighting
+customSyntaxHighlighting = true
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 5
+[markup]
+[markup.highlight]
+noClasses = false
+ 
+# options
+stickyNav = true
+# reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
+# collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+ 
+[params.advanced]
+# customCSS = ["css/custom.css"]
+# customJS = []
+ 
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy-MM-dd"
 
-  # show selector to switch language
-  showLanguageSelector = false
-
-  # set theme to full screen width
-  fullWidthTheme = true
-
-  # center theme with default width
-  centerTheme = false
-
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # whether to show a page's estimated reading time
-  # readingTime = false # default
-
-  # whether to show a table of contents
-  # can be overridden in a page's front-matter
-  # Toc = false # default
-
-  # set title for the table of contents
-  # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
-
-  # Set date/time format for posts
-  # This will impact the date/time displayed on
-  # index.html, the posts list page, and on posts themselves
-  # This value can also be configured per-post on front matter
-  # If you have any issues with the timezone rendering differently
-  # than you expected, please ensure your timezone is correctly set
-  # on your server.
-  # This value can be customized according to Hugo documentation:
-  # https://gohugo.io/functions/time/format/
-  # Default value (no changes needed):
-  # dateFormat = "2006-01-02"
-  # Example format, with date, time, and timezone abbreviation:
-  # dateFormat = "2006-01-02 3:04:06 PM MST"
-
-
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
-
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "Ashu's 0Day Arsenal"
-
-    [languages.en.params]
-      subtitle = "The Arsenal for Ethical Hackers and Cyber Defenders"
-      owner = "its-ashu-otf"
-      keywords = "Ashu's 0Day Arsenal"
-      copyright = "All Rights Reserved"
-      menuMore = "Show more"
-      readMore = "Read more"
-      readOtherPosts = "Read other posts"
-      newerPosts = "Newer posts"
-      olderPosts = "Older posts"
-      missingContentMessage = "Page not found..."
-      missingBackButtonLabel = "Back to home page"
-      minuteReadingTime = "min read"
-      words = "words"
-
-      [languages.en.params.logo]
-        logoText = "~/ashu"
-        logoHomeLink = "/"
-
-      [languages.en.menu]
-	[[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about/about-me"
-        [[languages.en.menu.main]]
-          identifier = "projects"
-          name = "Projects"
-          url = "/projects"
-
+enableRobotsTXT = true
