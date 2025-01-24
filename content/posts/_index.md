@@ -1,6 +1,5 @@
 ---
-title: Archive
-# groupLayout: January 2006
+title: Archives
 ---
-
-All articles displayed in timeline.
+ 
+All posts by timeline.

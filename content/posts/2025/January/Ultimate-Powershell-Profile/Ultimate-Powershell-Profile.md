@@ -1,8 +1,10 @@
 ---
 title: Ultimate Powershell Profile
-date: 2025-01-24T22:12:09+05:30
-lastmod: 2025-01-24T22:12:09+05:30
+date: 2025-01-24T21:31:01+05:30
+lastmod: 2025-01-24T21:31:01+05:30
 author: its-ashu-otf
+# avatar: /img/author.jpg
+# authorlink: https://author.site
 cover: /img/2025/powershell-cover.png
 images:
    - /img/2025/powershell-cover.png
@@ -14,8 +16,6 @@ tags:
   - windows
   - pwsh
 ---
-
-# PowerShell Profile: Linux Terminal Experience on Windows
 
 PowerShell is already powerful on its own, but with a few tweaks and enhancements, you can transform it into a Linux-like terminal experience—right on your Windows machine. This blog walks you through setting up a custom PowerShell profile that comes preloaded with quality-of-life improvements, aliases, and shortcuts to supercharge your terminal experience.
 
