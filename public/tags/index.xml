@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2025 21:31:01 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2025 21:40:09 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clipboard Manager</title>
+      <link>http://localhost:1313/tags/clipboard-manager/</link>
+      <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
+      <guid>http://localhost:1313/tags/clipboard-manager/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clipboardmanager</title>
+      <link>http://localhost:1313/tags/clipboardmanager/</link>
+      <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
+      <guid>http://localhost:1313/tags/clipboardmanager/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clipman</title>
+      <link>http://localhost:1313/tags/clipman/</link>
+      <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
+      <guid>http://localhost:1313/tags/clipman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kalilinux</title>
+      <link>http://localhost:1313/tags/kalilinux/</link>
+      <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
+      <guid>http://localhost:1313/tags/kalilinux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Powershell</title>
       <link>http://localhost:1313/tags/powershell/</link>

@@ -3,13 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-01-24T21:31:01+05:30</lastmod>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-24T21:31:01+05:30</lastmod>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-01-24T21:31:01+05:30</lastmod>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/clipboard-manager/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/clipboardmanager/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/clipman/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/febraury/clipboard-manager/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kalilinux/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/linux/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-14T21:40:09+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/powershell/</loc>
     <lastmod>2025-01-24T21:31:01+05:30</lastmod>
@@ -20,9 +41,6 @@
     <loc>http://localhost:1313/tags/pwsh/</loc>
     <lastmod>2025-01-24T21:31:01+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-01-24T21:31:01+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</loc>
     <lastmod>2025-01-24T21:31:01+05:30</lastmod>
   </url><url>
@@ -31,9 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/windows/</loc>
     <lastmod>2025-01-24T21:31:01+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/linux/</loc>
-    <lastmod>2025-01-23T23:12:09+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/myzsh/</loc>
     <lastmod>2025-01-23T23:12:09+05:30</lastmod>
