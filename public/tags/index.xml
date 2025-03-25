@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Feb 2025 21:40:09 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hyper-V</title>
+      <link>http://localhost:1313/tags/hyper-v/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hyper-v/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtualmachine</title>
+      <link>http://localhost:1313/tags/virtualmachine/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/virtualmachine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Win11</title>
+      <link>http://localhost:1313/tags/win11/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/win11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows11</title>
+      <link>http://localhost:1313/tags/windows11/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/windows11/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Clipboard Manager</title>
       <link>http://localhost:1313/tags/clipboard-manager/</link>

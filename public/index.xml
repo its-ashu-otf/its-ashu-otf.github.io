@@ -6,8 +6,15 @@
     <description>Recent content on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Feb 2025 21:40:09 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?</title>
+      <link>http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/2025/win.png&#34; alt=&#34;Windows 11 running with Hyper-V Enabled&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Enhancing Clipboard Management in Kali Linux with Clipman</title>
       <link>http://localhost:1313/posts/2025/febraury/clipboard-manager/</link>

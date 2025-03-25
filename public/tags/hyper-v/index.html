@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper-V | Ashu&#39;s 0Day Arsenal</title>
+
+    
+  
+    <link href="/favicon.png" rel="icon" type="image/x-icon" />
+  
+
+
+<link rel="canonical" href="http://localhost:1313/tags/hyper-v/" />
+
+
+
+<meta name="author" content="Ashutosh Gupta" />
+<meta name="description" content="Ashu&#39;s Personal Blog" />
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="http://localhost:1313/tags/hyper-v/">
+  <meta property="og:site_name" content="Ashu&#39;s 0Day Arsenal">
+  <meta property="og:title" content="Hyper-V">
+  <meta property="og:description" content="Ashu&#39;s Personal Blog">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/me/background.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/me/background.jpg">
+  <meta name="twitter:title" content="Hyper-V">
+  <meta name="twitter:description" content="Ashu&#39;s Personal Blog">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/me/ashu.jpg" alt="Ashu&#39;s 0Day Arsenal" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          Ashu&#39;s 0Day Arsenal
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">The Arsenal for Ethical Hackers and Cyber Defenders</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+
+<div class="flex flex-col md:flex-row mt-4">
+
+  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
+    <h1 class="text-2xl">Hyper-V</h1>
+    <p class="text-sm">1 article</p>
+    <div class="flex flex-wrap gap-4 mt-6">
+      
+
+      
+      
+      <a href="/tags/clipboard-manager/" class="badge h-6 no-underline hover:badge-primary">
+        Clipboard Manager
+      </a>
+      
+      
+      
+      <a href="/tags/clipboardmanager/" class="badge h-6 no-underline hover:badge-primary">
+        Clipboardmanager
+      </a>
+      
+      
+      
+      <a href="/tags/clipman/" class="badge h-6 no-underline hover:badge-primary">
+        Clipman
+      </a>
+      
+      
+      
+      <span class="badge h-6 badge-primary">
+        Hyper-V
+      </span>
+      
+      
+      
+      <a href="/tags/kalilinux/" class="badge h-6 no-underline hover:badge-primary">
+        Kalilinux
+      </a>
+      
+      
+      
+      <a href="/tags/myzsh/" class="badge h-6 no-underline hover:badge-primary">
+        MyZSH
+      </a>
+      
+      
+      
+      <a href="/tags/powershell/" class="badge h-6 no-underline hover:badge-primary">
+        Powershell
+      </a>
+      
+      
+      
+      <a href="/tags/powershell-profile/" class="badge h-6 no-underline hover:badge-primary">
+        Powershell-Profile
+      </a>
+      
+      
+      
+      <a href="/tags/pwsh/" class="badge h-6 no-underline hover:badge-primary">
+        Pwsh
+      </a>
+      
+      
+      
+      <a href="/tags/virtualmachine/" class="badge h-6 no-underline hover:badge-primary">
+        Virtualmachine
+      </a>
+      
+      
+      
+      <a href="/tags/win11/" class="badge h-6 no-underline hover:badge-primary">
+        Win11
+      </a>
+      
+      
+      
+      <a href="/tags/windows/" class="badge h-6 no-underline hover:badge-primary">
+        Windows
+      </a>
+      
+      
+      
+      <a href="/tags/windows11/" class="badge h-6 no-underline hover:badge-primary">
+        Windows11
+      </a>
+      
+      
+      
+      <a href="/tags/zsh/" class="badge h-6 no-underline hover:badge-primary">
+        Zsh
+      </a>
+      
+      
+      
+      <a href="/tags/zsh-prompt/" class="badge h-6 no-underline hover:badge-primary">
+        Zsh-Prompt
+      </a>
+      
+      
+      
+      <a href="/tags/zshconfig/" class="badge h-6 no-underline hover:badge-primary">
+        Zshconfig
+      </a>
+      
+      
+    </div>
+  </div>
+  
+  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
+  
+  <div class="flex-1">
+    
+
+    
+    <div class="dream-grid">
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2025/march/windows-11-unveiled/windows-11-unveiled/">
+  
+  <figure>
+    
+    <img src="/img/2025/windows-unveiled.png" alt="Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2025-03-25T00:00:00Z</span>
+    
+    </p>
+
+    <p>When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.</p>
+<h4 id="whats-a-hypervisor-anyway">What’s a Hypervisor, Anyway?</h4>
+<p>Before we get into Windows 11, let’s clarify what a hypervisor is. A hypervisor is software that creates and manages virtual machines, allowing multiple operating systems to run on a single physical machine. There are two types: Type 1 (bare-metal, like VMware ESXi) and Type 2 (hosted, like VirtualBox). The idea here is that Windows 11 might be leveraging a hypervisor-like architecture to run as a VM, even on your everyday PC.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">its-ashu-otf</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>9 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Ashu&#39;s 0Day Arsenal
+  </p>
+  
+
+  
+  <p>Website Made by @its-ashu-otf :: All Right's Reserved ©</p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>👋  Hi, I’m Ashutosh Gupta from Mumbai.<br>
+👀  I’m Studying Cyber Security.<br>
+🧠  I’m Currently Learning Securing Windows, Linux Systems, Red Teaming and Web Application Pentesting.</p>
+<h2 id="hobbies">Hobbies</h2>
+<p>🎮  When I’m not pentesting or studying, I love playing FPS and story games also exploring tech blogs.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Skills &amp; Tools</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li><strong>Operating Systems</strong>: Windows, Linux, Android  and macOS</li>
+<li><strong>Pentesting Tools</strong>: Burp Suite, Metasploit, Nmap, Wireshark</li>
+<li><strong>Programming</strong>: Python, Bash Scripting, Batch Scripting, C/C++, C# , HTML, CSS and Powershell</li>
+<li><strong>Frameworks</strong>: OWASP Top 10</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Education</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>SSC from St. John English High School</li>
+<li>HSC from Thakur College of Commerce &amp; Science</li>
+<li>Bachelor Of Science in Information Technology from Nirmala Memorial Foundation</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Certifications</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>Python</li>
+<li>Certified Cyber Security and Ethical Hacker</li>
+<li>Certified Ethical Hacker v13 (CEHv13) (In Progress)</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+  <li>
+    <a href="mailto:its-ashu-otf@gmail.com" title="Email">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+  </li>
+  
+
+  
+  <li>
+    <a href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://x.com/its_ashu_otf" target="_blank" title="X">
+      <ion-icon name="logo-x"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://instagram.com/its_ashu_otf" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Ashu&#39;s 0Day Arsenal
+  </p>
+  
+
+  
+  <p>Website Made by @its-ashu-otf :: All Right's Reserved ©</p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "light"
+  window.darkTheme = "dark"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "en" }).toFormat("yyyy-MM-dd")
+    })
+  }
+</script>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
