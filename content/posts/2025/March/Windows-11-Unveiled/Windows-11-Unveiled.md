@@ -16,7 +16,6 @@ tags:
   - hyper-v
 ---
 
-![Windows 11 running with Hyper-V Enabled](/img/2025/win.png)
 
 When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.
 
@@ -76,6 +75,8 @@ This shift isn’t without downsides. Gamers, for instance, have reported perfor
    - **Symptoms**: VM crashes, errors like “VT-x is unavailable,” or inability to start the VM.
 
 ---
+
+![Windows 11 running with Hyper-V Enabled](/img/2025/win.png)
 
 ### Why This Ties to Windows 11 as a "VM on a Hypervisor"
 The blog idea—that Windows 11 runs like a virtual machine on a hypervisor—comes from its deep integration of Hyper-V and VBS. In VMware Workstation, this becomes literal: Windows 11’s internal hypervisor (Hyper-V) runs nested within VMware’s hypervisor. This double-layered virtualization amplifies resource demands, as both systems fight to manage CPU, memory, and I/O through their respective abstraction layers.
