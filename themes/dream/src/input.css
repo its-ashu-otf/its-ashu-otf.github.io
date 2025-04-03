@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss' source(none);
+
+@source "../layouts";
+
+@plugin '@tailwindcss/typography';
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@config '../tailwind.config.js';
+
+#disqus_thread iframe[src*='ads-iframe'] {
+  display: none;
+}
 
 #dream-global-bg {
   position: fixed;

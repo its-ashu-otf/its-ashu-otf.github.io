@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Ashu&#39;s 0Day Arsenal</title>
-    <link>http://localhost:1313/categories/windows/</link>
+    <link>//localhost:1313/categories/windows/</link>
     <description>Recent content in Windows on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?</title>
-      <link>http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</link>
+      <link>//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</guid>
+      <guid>//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</guid>
       <description>&lt;p&gt;When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.&lt;/p&gt;&#xA;&lt;h4 id=&#34;whats-a-hypervisor-anyway&#34;&gt;What’s a Hypervisor, Anyway?&lt;/h4&gt;&#xA;&lt;p&gt;Before we get into Windows 11, let’s clarify what a hypervisor is. A hypervisor is software that creates and manages virtual machines, allowing multiple operating systems to run on a single physical machine. There are two types: Type 1 (bare-metal, like VMware ESXi) and Type 2 (hosted, like VirtualBox). The idea here is that Windows 11 might be leveraging a hypervisor-like architecture to run as a VM, even on your everyday PC.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ultimate Powershell Profile</title>
-      <link>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</link>
+      <link>//localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</guid>
+      <guid>//localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</guid>
       <description>&lt;p&gt;PowerShell is already powerful on its own, but with a few tweaks and enhancements, you can transform it into a Linux-like terminal experience—right on your Windows machine. This blog walks you through setting up a custom PowerShell profile that comes preloaded with quality-of-life improvements, aliases, and shortcuts to supercharge your terminal experience.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-one-line-install&#34;&gt;⚡ One-Line Install&lt;/h2&gt;&#xA;&lt;p&gt;Getting started is quick and easy. Open an &lt;strong&gt;elevated PowerShell window&lt;/strong&gt; (run PowerShell as Administrator) and execute the following command:&lt;/p&gt;</description>
     </item>
   </channel>

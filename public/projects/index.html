@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ashu&#39;s 0Day Arsenal</title>
+
+    
+  
+    <link href="/favicon.png" rel="icon" type="image/x-icon" />
+  
+
+
+<link rel="canonical" href="//localhost:1313/projects/" />
+
+
+
+<meta name="author" content="Ashutosh Gupta" />
+<meta name="description" content="Ashu&#39;s Personal Blog" />
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="//localhost:1313/projects/">
+  <meta property="og:site_name" content="Ashu&#39;s 0Day Arsenal">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects 1. PassHaven - Password Security Tool Purpose of the Project The project PassHaven aims to enhance the security of online accounts by providing a tool that integrates robust password generation with advanced breach detection capabilities. This tool ensures that users can generate secure passwords and check if their passwords have been compromised in known data breaches. The README outlines the tool’s purpose and provides a detailed installation guide, making it accessible for users to set up and use.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2024-02-02T04:14:54-08:00">
+    <meta property="article:modified_time" content="2024-02-02T04:14:54-08:00">
+    <meta property="og:image" content="//localhost:1313/me/background.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/me/background.jpg">
+  <meta name="twitter:title" content="Projects">
+  <meta name="twitter:description" content="Projects 1. PassHaven - Password Security Tool Purpose of the Project The project PassHaven aims to enhance the security of online accounts by providing a tool that integrates robust password generation with advanced breach detection capabilities. This tool ensures that users can generate secure passwords and check if their passwords have been compromised in known data breaches. The README outlines the tool’s purpose and provides a detailed installation guide, making it accessible for users to set up and use.">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<link rel="stylesheet" data-custom-syntax-highlighting />
+<style>
+  .chroma {
+    padding: 1em;
+    background-color: var(--dream-pre-bg, #f5f5f5);
+    border-radius: .5em;
+    overflow: auto;
+  }
+
+  html.dark .chroma {
+    background-color: var(--dream-pre-bg-dark, #262626);
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/me/ashu.jpg" alt="Ashu&#39;s 0Day Arsenal" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="//localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          Ashu&#39;s 0Day Arsenal
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">The Arsenal for Ethical Hackers and Cyber Defenders</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+    
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
+
+
+
+  
+
+  
+    
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/projects/" target="" title="Projects">
+    
+    <ion-icon name="code-slash-outline"></ion-icon>
+    
+    Projects
+  </a>
+</li>
+
+
+
+  
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+<div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+  
+
+  
+    
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/projects/" target="" title="Projects">
+    <ion-icon class="group-hover:text-primary-content" name="code-slash-outline"></ion-icon>
+  </a>
+  
+
+
+
+  
+
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="Projects">
+  <meta itemprop="description" content="Projects 1. PassHaven - Password Security Tool Purpose of the Project The project PassHaven aims to enhance the security of online accounts by providing a tool that integrates robust password generation with advanced breach detection capabilities. This tool ensures that users can generate secure passwords and check if their passwords have been compromised in known data breaches. The README outlines the tool’s purpose and provides a detailed installation guide, making it accessible for users to set up and use.">
+  <meta itemprop="datePublished" content="2024-02-02T04:14:54-08:00">
+  <meta itemprop="dateModified" content="2024-02-02T04:14:54-08:00">
+  <meta itemprop="wordCount" content="351">
+  <meta itemprop="image" content="//localhost:1313/me/background.jpg">
+
+      <header>
+        <h1 itemprop="headline">Projects</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-02-02T04:14:54-08:00</span>
+          
+
+          | <span>2 minute read</span>
+
+          
+          | <span>Updated at
+            
+              <span data-format="luxon">2024-02-02T04:14:54-08:00</span>
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">its-ashu-otf</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=Projects&amp;url=//localhost:1313/projects/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=//localhost:1313/projects/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Projects%20//localhost:1313/projects/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <h1 id="projects">Projects</h1>
+<h2 id="1-passhaven---password-security-tool">1. PassHaven - Password Security Tool</h2>
+<h3 id="purpose-of-the-project"><strong>Purpose of the Project</strong></h3>
+<p>The project <strong>PassHaven</strong> aims to enhance the security of online accounts by providing a tool that integrates robust password generation with advanced breach detection capabilities. This tool ensures that users can generate secure passwords and check if their passwords have been compromised in known data breaches. The README outlines the tool&rsquo;s purpose and provides a detailed installation guide, making it accessible for users to set up and use.</p>
+<h3 id="features-and-technologies-used"><strong>Features and Technologies Used</strong></h3>
+<p>PassHaven leverages Python to implement several key features:</p>
+<ul>
+<li><strong>Secure Password Generation</strong>: Allows users to create strong, random passwords with customizable options.</li>
+<li><strong>Password Strength Evaluation</strong>: Provides feedback on password strength and offers suggestions for improvement.</li>
+<li><strong>Breach Detection</strong>: Utilizes the Pwned Passwords API to check if passwords have been exposed in data breaches.</li>
+<li><strong>User-Friendly Interface</strong>: Features a command-line interface that is simple to navigate.</li>
+<li><strong>Cross-Platform Support</strong>: Supported on Windows, Linux &amp; macOS</li>
+<li><strong>Additional Suggestions and Progress Indicators</strong>: Offers tailored suggestions based on common vulnerabilities and visual feedback during operations.</li>
+</ul>
+<p>Check this project &amp; source code on <a href="https://github.com/its-ashu-otf/PassHaven" target="_blank">GitHub</a>
+</p>
+<h2 id="2-pixelshield---image-encryption-tool">2. PixelShield - Image Encryption Tool</h2>
+<h3 id="purpose-of-the-project-1"><strong>Purpose of the Project</strong></h3>
+<p>The <strong>PixelShield</strong> project is designed to provide robust image encryption, ensuring the security of image files through strong encryption algorithms. The tool secures visual data from unauthorized access and tampering. The README highlights the tool&rsquo;s features, installation instructions, usage guidelines, and security aspects, making it a comprehensive guide for users.</p>
+<h3 id="features-and-technologies-used-1"><strong>Features and Technologies Used</strong></h3>
+<p>PixelShield incorporates several key features using Python:</p>
+<ul>
+<li><strong>Encryption and Decryption</strong>: Utilizes AES-256 encryption for secure image handling.</li>
+<li><strong>Supported Formats</strong>: Handles over 15 image formats, including common, modern, and raw types.</li>
+<li><strong>Interfaces</strong>: Offers both command-line and graphical interfaces, with features like dark mode, system theme detection, and a user-friendly design.</li>
+<li><strong>Security Features</strong>: Implements secure key derivation, salt addition, integrity verification, and secure password handling.</li>
+<li><strong>Error Handling</strong>: Provides detailed error messages for various scenarios, ensuring users can troubleshoot issues effectively.</li>
+<li><strong>Cross-Platform</strong>: Works on Windows, Linux &amp; macOS</li>
+</ul>
+<p>The repository includes dependencies such as <code>tkinter</code> for the GUI, <code>Pillow</code> for image processing, and <code>cryptography</code> for encryption, indicating a well-rounded and secure implementation.</p>
+
+
+        
+      </section>
+
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="its-ashu-otf/its-ashu-otf.github.io"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Ashu&#39;s 0Day Arsenal
+  </p>
+  
+
+  
+  <p>Website Made by @its-ashu-otf :: All Right's Reserved ©</p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>👋  Hi, I’m Ashutosh Gupta from Mumbai.<br>
+👀  I’m Studying Cyber Security.<br>
+🧠  I’m Currently Learning Securing Windows, Linux Systems, Red Teaming and Web Application Pentesting.</p>
+<h2 id="hobbies">Hobbies</h2>
+<p>🎮  When I’m not pentesting or studying, I love playing FPS and story games also exploring tech blogs.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Skills &amp; Tools</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li><strong>Operating Systems</strong>: Windows, Linux, Android  and macOS</li>
+<li><strong>Pentesting Tools</strong>: Burp Suite, Metasploit, Nmap, Wireshark</li>
+<li><strong>Programming</strong>: Python, Bash Scripting, Batch Scripting, C/C++, C# , HTML, CSS and Powershell</li>
+<li><strong>Frameworks</strong>: OWASP Top 10</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Education</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>SSC from St. John English High School</li>
+<li>HSC from Thakur College of Commerce &amp; Science</li>
+<li>Bachelor Of Science in Information Technology from Nirmala Memorial Foundation</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Certifications</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>Certified Cyber Security and Ethical Hacker</li>
+<li>Introduction to Hacking Methodology</li>
+<li>Certified Ethical Hacker v13 (CEHv13) (In Progress)</li>
+<li>eJPTv2 (In Progress)</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+  <li>
+    <a href="mailto:its-ashu-otf@gmail.com" title="Email">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+  </li>
+  
+
+  
+  <li>
+    <a href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://x.com/its_ashu_otf" target="_blank" title="X">
+      <ion-icon name="logo-x"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://instagram.com/its_ashu_otf" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/its-ashu-otf" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Ashu&#39;s 0Day Arsenal
+  </p>
+  
+
+  
+  <p>Website Made by @its-ashu-otf :: All Right's Reserved ©</p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "light"
+  window.darkTheme = "dark"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "en" }).toFormat("yyyy-MM-dd")
+    })
+  }
+</script>
+
+
+
+<script>
+  window.customSyntaxHighlighting = {
+    light: "/css/syntax-light.min.css",
+    dark: "/css/syntax-dark.min.css"
+  }
+
+  document.addEventListener('alpine:initialized', () => {
+    var isDark = Alpine.store('darkMode').isDark()
+    var customSyntaxHighlightingUrl = isDark ? window.customSyntaxHighlighting.dark : window.customSyntaxHighlighting.light
+
+    document
+      .querySelector('link[data-custom-syntax-highlighting]')
+      .setAttribute('href', customSyntaxHighlightingUrl)
+  })
+</script>
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

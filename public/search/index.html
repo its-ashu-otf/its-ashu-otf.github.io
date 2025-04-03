@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"
+<html lang="en"
   x-data
   :class="$store.darkMode.class()"
   :data-theme="$store.darkMode.theme()">
@@ -14,7 +14,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:1313/search/" />
+<link rel="canonical" href="//localhost:1313/search/" />
 
 
 
@@ -26,19 +26,19 @@
 <meta name="generator" content="Hugo 0.145.0">
 
 
-<meta property="og:url" content="http://localhost:1313/search/">
+<meta property="og:url" content="//localhost:1313/search/">
   <meta property="og:site_name" content="Ashu&#39;s 0Day Arsenal">
   <meta property="og:title" content="Ashu&#39;s 0Day Arsenal">
   <meta property="og:description" content="Ashu&#39;s Personal Blog">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/me/background.jpg">
+    <meta property="og:image" content="//localhost:1313/me/background.jpg">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/me/background.jpg">
+  <meta name="twitter:image" content="//localhost:1313/me/background.jpg">
   <meta name="twitter:title" content="Ashu&#39;s 0Day Arsenal">
   <meta name="twitter:description" content="Ashu&#39;s Personal Blog">
 
@@ -54,7 +54,7 @@
 
     
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
   </head>
 
   <body x-data="{
@@ -70,7 +70,7 @@
   <div class="container flex justify-between px-4">
   
     <section class="flex items-center gap-4">
-      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
         <div class="h-10 rounded-full">
           <img src="/me/ashu.jpg" alt="Ashu&#39;s 0Day Arsenal" />
         </div>
@@ -79,7 +79,7 @@
       
       <div>
         
-        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+        <a href="//localhost:1313/" class="text-lg font-semibold cursor-pointer">
           Ashu&#39;s 0Day Arsenal
         </a>
         
@@ -90,12 +90,20 @@
       
     </section>
 
+    
+    
+
     <div class="dropdown dropdown-end sm:hidden">
       <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
         <ion-icon name="menu" class="text-2xl"></ion-icon>
       </div>
-      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
         
+
+
+
+
+
 
 
 <li>
@@ -158,24 +166,72 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+    
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
+
+
+
+  
+
+  
+    
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/projects/" target="" title="Projects">
+    
+    <ion-icon name="code-slash-outline"></ion-icon>
+    
+    Projects
+  </a>
+</li>
+
+
+
+  
+
+
+
+
       </ul>
     </div>
     <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
       
-      
-      
-      <div role="link" tabindex="0"
-        class="text-sm font-semibold cursor-pointer hover:underline"
-        @click="flip = !flip"
-        title="About"
-      >About</div>
-      
-      
 
       
       
 
-      
+
+
+
+<div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+
+
+
+
 
       
       
@@ -215,6 +271,50 @@
       
 
       
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+  
+
+  
+    
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/projects/" target="" title="Projects">
+    <ion-icon class="group-hover:text-primary-content" name="code-slash-outline"></ion-icon>
+  </a>
+  
+
+
+
+  
+
+
+      
 
       
     </section>
@@ -235,14 +335,14 @@ x-data="{
   search: '',
   get posts() { return this.search !== '' ? window.fuse.search(this.search) : [] },
 }">
-  <label for="search" class="input input-bordered flex items-center gap-2">
+  <label for="search" class="input w-full">
     <input id="search" name="search" type="text" class="grow" placeholder="Search" x-model.debounce="search" />
     <ion-icon name="search"></ion-icon>
   </label>
 
   <div class="mt-8 space-y-4">
   <template x-for="post in posts">
-    <a class="card card-compact bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
+    <a class="card bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
       <div class="card-body">
         <h2 class="card-title" x-text="post.item.title"></h2>
 
@@ -300,8 +400,8 @@ x-data="{
 
   <div
   x-data="{ icons: [
-    { name: 'moon', status: 'y' },
     { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
   ] }"
   class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
@@ -338,7 +438,7 @@ x-data="{
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">About Me</div>
@@ -357,7 +457,7 @@ x-data="{
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Skills &amp; Tools</div>
@@ -377,7 +477,7 @@ x-data="{
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Education</div>
@@ -396,16 +496,17 @@ x-data="{
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Certifications</div>
 
         <div class="prose dark:prose-invert">
           <ul>
-<li>Python</li>
 <li>Certified Cyber Security and Ethical Hacker</li>
+<li>Introduction to Hacking Methodology</li>
 <li>Certified Ethical Hacker v13 (CEHv13) (In Progress)</li>
+<li>eJPTv2 (In Progress)</li>
 </ul>
 
         </div>
@@ -418,7 +519,7 @@ x-data="{
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Social Links</div>
@@ -451,6 +552,12 @@ x-data="{
     </a>
   </li>
   
+  <li>
+    <a href="https://www.linkedin.com/in/its-ashu-otf" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
 </ul>
 
       </div>
@@ -480,8 +587,8 @@ x-data="{
 
   <div
   x-data="{ icons: [
-    { name: 'moon', status: 'y' },
     { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
   ] }"
   class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
@@ -565,7 +672,7 @@ x-data="{
 
     
 
-    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
   </body>
 </html>

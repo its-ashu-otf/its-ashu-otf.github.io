@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"
+<html lang="en"
   x-data
   :class="$store.darkMode.class()"
   :data-theme="$store.darkMode.theme()">
@@ -14,7 +14,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" />
+<link rel="canonical" href="//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" />
 
 
 
@@ -31,12 +31,12 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
 <meta name="generator" content="Hugo 0.145.0">
 
 
-<meta property="og:url" content="http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/">
+<meta property="og:url" content="//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/">
   <meta property="og:site_name" content="Ashu&#39;s 0Day Arsenal">
   <meta property="og:title" content="Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?">
   <meta property="og:description" content="When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.
 What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify what a hypervisor is. A hypervisor is software that creates and manages virtual machines, allowing multiple operating systems to run on a single physical machine. There are two types: Type 1 (bare-metal, like VMware ESXi) and Type 2 (hosted, like VirtualBox). The idea here is that Windows 11 might be leveraging a hypervisor-like architecture to run as a VM, even on your everyday PC.">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-03-25T00:00:00+00:00">
@@ -45,14 +45,14 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
     <meta property="article:tag" content="Win11">
     <meta property="article:tag" content="Virtualmachine">
     <meta property="article:tag" content="Hyper-V">
-    <meta property="og:image" content="http://localhost:1313/img/2025/windows-unveiled.png">
-    <meta property="og:image" content="http://localhost:1313/img/2025/hvnesting.png">
+    <meta property="og:image" content="//localhost:1313/img/2025/windows-unveiled.png">
+    <meta property="og:image" content="//localhost:1313/img/2025/hvnesting.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/img/2025/windows-unveiled.png">
+  <meta name="twitter:image" content="//localhost:1313/img/2025/windows-unveiled.png">
   <meta name="twitter:title" content="Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?">
   <meta name="twitter:description" content="When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.
 What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify what a hypervisor is. A hypervisor is software that creates and manages virtual machines, allowing multiple operating systems to run on a single physical machine. There are two types: Type 1 (bare-metal, like VMware ESXi) and Type 2 (hosted, like VirtualBox). The idea here is that Windows 11 might be leveraging a hypervisor-like architecture to run as a VM, even on your everyday PC.">
@@ -92,7 +92,7 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
 
     
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
   </head>
 
   <body x-data="{
@@ -108,7 +108,7 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
   <div class="container flex justify-between px-4">
   
     <section class="flex items-center gap-4">
-      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
         <div class="h-10 rounded-full">
           <img src="/me/ashu.jpg" alt="Ashu&#39;s 0Day Arsenal" />
         </div>
@@ -117,7 +117,7 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
       
       <div>
         
-        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+        <a href="//localhost:1313/" class="text-lg font-semibold cursor-pointer">
           Ashu&#39;s 0Day Arsenal
         </a>
         
@@ -128,12 +128,20 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
       
     </section>
 
+    
+    
+
     <div class="dropdown dropdown-end sm:hidden">
       <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
         <ion-icon name="menu" class="text-2xl"></ion-icon>
       </div>
-      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
         
+
+
+
+
+
 
 
 <li>
@@ -196,24 +204,72 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+    
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
+
+
+
+  
+
+  
+    
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/projects/" target="" title="Projects">
+    
+    <ion-icon name="code-slash-outline"></ion-icon>
+    
+    Projects
+  </a>
+</li>
+
+
+
+  
+
+
+
+
       </ul>
     </div>
     <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
       
-      
-      
-      <div role="link" tabindex="0"
-        class="text-sm font-semibold cursor-pointer hover:underline"
-        @click="flip = !flip"
-        title="About"
-      >About</div>
-      
-      
 
       
       
 
-      
+
+
+
+<div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+
+
+
+
 
       
       
@@ -253,6 +309,50 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
       
 
       
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/its-ashu-otf" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+  
+
+  
+    
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/projects/" target="" title="Projects">
+    <ion-icon class="group-hover:text-primary-content" name="code-slash-outline"></ion-icon>
+  </a>
+  
+
+
+
+  
+
+
+      
 
       
     </section>
@@ -266,7 +366,9 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
           <div class="container">
             
 <div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
-  <div class="hidden lg:block"></div>
+  <div class="hidden lg:block">
+    
+  </div>
 
   <div class="lg:col-span-2">
     <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
@@ -277,8 +379,8 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
   <meta itemprop="datePublished" content="2025-03-25T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-03-25T00:00:00+00:00">
   <meta itemprop="wordCount" content="1710">
-  <meta itemprop="image" content="http://localhost:1313/img/2025/windows-unveiled.png">
-  <meta itemprop="image" content="http://localhost:1313/img/2025/hvnesting.png">
+  <meta itemprop="image" content="//localhost:1313/img/2025/windows-unveiled.png">
+  <meta itemprop="image" content="//localhost:1313/img/2025/hvnesting.png">
   <meta itemprop="keywords" content="Windows11,Win11,Virtualmachine,Hyper-V">
 
       <header>
@@ -327,19 +429,19 @@ What’s a Hypervisor, Anyway? Before we get into Windows 11, let’s clarify wh
   
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://x.com/intent/post?text=Windows%2011%20Unveiled:%20A%20Virtual%20Machine%20Running%20on%20a%20Hypervisor?&amp;url=http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" target="_blank" rel="noopener noreferrer"
+      href="https://x.com/intent/post?text=Windows%2011%20Unveiled:%20A%20Virtual%20Machine%20Running%20on%20a%20Hypervisor?&amp;url=//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" target="_blank" rel="noopener noreferrer"
       title="Share on X">
       <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
     </a>
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" target="_blank" rel="noopener noreferrer"
+      href="https://facebook.com/sharer/sharer.php?u=//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" target="_blank" rel="noopener noreferrer"
       title="Share on Facebook">
       <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
     </a>
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://wa.me/?text=Windows%2011%20Unveiled:%20A%20Virtual%20Machine%20Running%20on%20a%20Hypervisor?%20http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" target="_blank" rel="noopener noreferrer"
+      href="https://wa.me/?text=Windows%2011%20Unveiled:%20A%20Virtual%20Machine%20Running%20on%20a%20Hypervisor?%20//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/" target="_blank" rel="noopener noreferrer"
       title="Share on WhatsApp">
       <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
     </a>
@@ -502,6 +604,8 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
 <p>Windows 11 may not be a full-fledged virtual machine plopped onto a hypervisor, but it’s leaning hard into virtualization tech. With Hyper-V, VBS, and strict hardware demands, Microsoft is building an OS that’s secure, flexible, and ready for a cloud-driven future. Whether you see it as a VM or just a cleverly layered system, one thing’s clear: Windows 11 is more than meets the eye.</p>
 <p>What do you think—innovative design or overcomplicated mess? Let me know in the comments!</p>
 
+
+        
       </section>
 
       
@@ -531,14 +635,14 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
 
 
 
+
+
       </section>
       
     </article>
   </div>
 
   <div class="hidden lg:flex lg:flex-col lg:items-end">
-    
-
     
   </div>
 </div>
@@ -561,8 +665,8 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
 
   <div
   x-data="{ icons: [
-    { name: 'moon', status: 'y' },
     { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
   ] }"
   class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
@@ -599,7 +703,7 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">About Me</div>
@@ -618,7 +722,7 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Skills &amp; Tools</div>
@@ -638,7 +742,7 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Education</div>
@@ -657,16 +761,17 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Certifications</div>
 
         <div class="prose dark:prose-invert">
           <ul>
-<li>Python</li>
 <li>Certified Cyber Security and Ethical Hacker</li>
+<li>Introduction to Hacking Methodology</li>
 <li>Certified Ethical Hacker v13 (CEHv13) (In Progress)</li>
+<li>eJPTv2 (In Progress)</li>
 </ul>
 
         </div>
@@ -679,7 +784,7 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
   
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
     <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
         <div class="card-title">Social Links</div>
@@ -712,6 +817,12 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
     </a>
   </li>
   
+  <li>
+    <a href="https://www.linkedin.com/in/its-ashu-otf" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
 </ul>
 
       </div>
@@ -741,8 +852,8 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
 
   <div
   x-data="{ icons: [
-    { name: 'moon', status: 'y' },
     { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
   ] }"
   class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
@@ -842,7 +953,7 @@ If you like her project don&rsquo;t forget to drop a star :)</p>
 
     
 
-    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,13 +1,17 @@
-baseURL = 'https://its-ashu-otf.github.io/'
-
+baseURL = 'its-ashu-otf.github.io'
+defaultContentLanguage = "en"
+languageCode = "en"
 title = "Ashu's 0Day Arsenal"
-
 theme = "dream"
 
-languageCode = "en-us"
+# [services]
+# [services.disqus]
+# shortname = ""
+# [services.googleAnalytics]
+# ID = ""
 
 [params]
-#zenMode = true
+# zenMode = true
  
 lightTheme = "light"
 darkTheme = "dark"
@@ -45,20 +49,31 @@ favicon = "favicon.png"
 # Syntax highlighting
 customSyntaxHighlighting = true
 
+
 [markup]
 [markup.highlight]
 noClasses = false
  
 # options
-stickyNav = true
-# reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
-# collapseNavItems = ["posts", "categories", "tags"]
+#stickyNav = true
+reorderNavItems = ["github", "projects" ,"search", "rss", "posts", "categories", "tags"]
+collapseNavItems = ["projects"]
 # noDefaultSummaryCover = true
-showTableOfContents = true
+# showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
 # reorderShares = ["x", "facebook", "whatsapp"]
+
+[params.navItems]
+github = { href = "https://github.com/its-ashu-otf", target = "_blank", icon = "logo-github", title = "GitHub" }
+projects = { href = "/projects/", icon = "code-slash-outline", title = "Projects" }
+
+# [params.twikoo]
+# enabled = true
+# envID = ""
+# region = ""
+# lang = ""
  
 [params.advanced]
 # customCSS = ["css/custom.css"]

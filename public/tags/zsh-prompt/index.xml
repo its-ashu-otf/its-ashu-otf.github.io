@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zsh-Prompt on Ashu&#39;s 0Day Arsenal</title>
-    <link>http://localhost:1313/tags/zsh-prompt/</link>
+    <link>//localhost:1313/tags/zsh-prompt/</link>
     <description>Recent content in Zsh-Prompt on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Thu, 23 Jan 2025 23:12:09 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/zsh-prompt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/zsh-prompt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ultimate ZSH Prompt</title>
-      <link>http://localhost:1313/posts/2025/january/ultimate-zsh-prompt/</link>
+      <link>//localhost:1313/posts/2025/january/ultimate-zsh-prompt/</link>
       <pubDate>Thu, 23 Jan 2025 23:12:09 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/january/ultimate-zsh-prompt/</guid>
+      <guid>//localhost:1313/posts/2025/january/ultimate-zsh-prompt/</guid>
       <description>&lt;p&gt;The &lt;code&gt;.zshrc&lt;/code&gt; file is a script that runs every time a new terminal session is started in Unix-like operating systems. It is used to configure the shell session, set up aliases, define functions, and more, making the terminal easier to use and more powerful. Below is a summary of the key sections and functionalities defined in the provided &lt;code&gt;.zshrc&lt;/code&gt; file.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;This sets up myZSH for you. It will backup your current .zshrc if you already have one.&lt;/p&gt;</description>
     </item>
   </channel>

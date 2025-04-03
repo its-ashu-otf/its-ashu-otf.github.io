@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ashu&#39;s 0Day Arsenal</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hyper-V</title>
-      <link>http://localhost:1313/tags/hyper-v/</link>
+      <link>//localhost:1313/tags/hyper-v/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hyper-v/</guid>
+      <guid>//localhost:1313/tags/hyper-v/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualmachine</title>
-      <link>http://localhost:1313/tags/virtualmachine/</link>
+      <link>//localhost:1313/tags/virtualmachine/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/virtualmachine/</guid>
+      <guid>//localhost:1313/tags/virtualmachine/</guid>
       <description></description>
     </item>
     <item>
       <title>Win11</title>
-      <link>http://localhost:1313/tags/win11/</link>
+      <link>//localhost:1313/tags/win11/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/win11/</guid>
+      <guid>//localhost:1313/tags/win11/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows11</title>
-      <link>http://localhost:1313/tags/windows11/</link>
+      <link>//localhost:1313/tags/windows11/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windows11/</guid>
+      <guid>//localhost:1313/tags/windows11/</guid>
       <description></description>
     </item>
     <item>
       <title>Clipboard Manager</title>
-      <link>http://localhost:1313/tags/clipboard-manager/</link>
+      <link>//localhost:1313/tags/clipboard-manager/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/clipboard-manager/</guid>
+      <guid>//localhost:1313/tags/clipboard-manager/</guid>
       <description></description>
     </item>
     <item>
       <title>Clipboardmanager</title>
-      <link>http://localhost:1313/tags/clipboardmanager/</link>
+      <link>//localhost:1313/tags/clipboardmanager/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/clipboardmanager/</guid>
+      <guid>//localhost:1313/tags/clipboardmanager/</guid>
       <description></description>
     </item>
     <item>
       <title>Clipman</title>
-      <link>http://localhost:1313/tags/clipman/</link>
+      <link>//localhost:1313/tags/clipman/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/clipman/</guid>
+      <guid>//localhost:1313/tags/clipman/</guid>
       <description></description>
     </item>
     <item>
       <title>Kalilinux</title>
-      <link>http://localhost:1313/tags/kalilinux/</link>
+      <link>//localhost:1313/tags/kalilinux/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/kalilinux/</guid>
+      <guid>//localhost:1313/tags/kalilinux/</guid>
       <description></description>
     </item>
     <item>
       <title>Powershell</title>
-      <link>http://localhost:1313/tags/powershell/</link>
+      <link>//localhost:1313/tags/powershell/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/tags/powershell/</guid>
+      <guid>//localhost:1313/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
       <title>Powershell-Profile</title>
-      <link>http://localhost:1313/tags/powershell-profile/</link>
+      <link>//localhost:1313/tags/powershell-profile/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/tags/powershell-profile/</guid>
+      <guid>//localhost:1313/tags/powershell-profile/</guid>
       <description></description>
     </item>
     <item>
       <title>Pwsh</title>
-      <link>http://localhost:1313/tags/pwsh/</link>
+      <link>//localhost:1313/tags/pwsh/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/tags/pwsh/</guid>
+      <guid>//localhost:1313/tags/pwsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
+      <link>//localhost:1313/tags/windows/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>//localhost:1313/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>MyZSH</title>
-      <link>http://localhost:1313/tags/myzsh/</link>
+      <link>//localhost:1313/tags/myzsh/</link>
       <pubDate>Thu, 23 Jan 2025 23:12:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/myzsh/</guid>
+      <guid>//localhost:1313/tags/myzsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Zsh</title>
-      <link>http://localhost:1313/tags/zsh/</link>
+      <link>//localhost:1313/tags/zsh/</link>
       <pubDate>Thu, 23 Jan 2025 23:12:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/zsh/</guid>
+      <guid>//localhost:1313/tags/zsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Zsh-Prompt</title>
-      <link>http://localhost:1313/tags/zsh-prompt/</link>
+      <link>//localhost:1313/tags/zsh-prompt/</link>
       <pubDate>Thu, 23 Jan 2025 23:12:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/zsh-prompt/</guid>
+      <guid>//localhost:1313/tags/zsh-prompt/</guid>
       <description></description>
     </item>
     <item>
       <title>Zshconfig</title>
-      <link>http://localhost:1313/tags/zshconfig/</link>
+      <link>//localhost:1313/tags/zshconfig/</link>
       <pubDate>Thu, 23 Jan 2025 23:12:09 +0530</pubDate>
-      <guid>http://localhost:1313/tags/zshconfig/</guid>
+      <guid>//localhost:1313/tags/zshconfig/</guid>
       <description></description>
     </item>
   </channel>

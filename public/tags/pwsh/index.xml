@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pwsh on Ashu&#39;s 0Day Arsenal</title>
-    <link>http://localhost:1313/tags/pwsh/</link>
+    <link>//localhost:1313/tags/pwsh/</link>
     <description>Recent content in Pwsh on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Fri, 24 Jan 2025 21:31:01 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pwsh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/pwsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ultimate Powershell Profile</title>
-      <link>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</link>
+      <link>//localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</guid>
+      <guid>//localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</guid>
       <description>&lt;p&gt;PowerShell is already powerful on its own, but with a few tweaks and enhancements, you can transform it into a Linux-like terminal experience—right on your Windows machine. This blog walks you through setting up a custom PowerShell profile that comes preloaded with quality-of-life improvements, aliases, and shortcuts to supercharge your terminal experience.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-one-line-install&#34;&gt;⚡ One-Line Install&lt;/h2&gt;&#xA;&lt;p&gt;Getting started is quick and easy. Open an &lt;strong&gt;elevated PowerShell window&lt;/strong&gt; (run PowerShell as Administrator) and execute the following command:&lt;/p&gt;</description>
     </item>
   </channel>

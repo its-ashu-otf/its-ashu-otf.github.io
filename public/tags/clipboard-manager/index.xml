@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clipboard Manager on Ashu&#39;s 0Day Arsenal</title>
-    <link>http://localhost:1313/tags/clipboard-manager/</link>
+    <link>//localhost:1313/tags/clipboard-manager/</link>
     <description>Recent content in Clipboard Manager on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Fri, 14 Feb 2025 21:40:09 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/clipboard-manager/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/clipboard-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enhancing Clipboard Management in Kali Linux with Clipman</title>
-      <link>http://localhost:1313/posts/2025/febraury/clipboard-manager/</link>
+      <link>//localhost:1313/posts/2025/febraury/clipboard-manager/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/febraury/clipboard-manager/</guid>
+      <guid>//localhost:1313/posts/2025/febraury/clipboard-manager/</guid>
       <description>&lt;h1 id=&#34;enhancing-clipboard-management-in-kali-linux-with-clipman&#34;&gt;Enhancing Clipboard Management in Kali Linux with Clipman&lt;/h1&gt;&#xA;&lt;p&gt;If you’re a Kali Linux user, you might have noticed that Linux lacks a built-in clipboard manager with a convenient shortcut like Windows + V. This can be frustrating, especially if you&amp;rsquo;re accustomed to managing your clipboard history seamlessly on Windows. To solve this, I’ve developed a simple Clipboard Manager add-on for Kali Linux that integrates Clipman and binds it to the Windows + V shortcut. Let’s dive into the setup and benefits of this handy tool.&lt;/p&gt;</description>
     </item>
   </channel>

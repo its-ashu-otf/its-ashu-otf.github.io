@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ashu&#39;s 0Day Arsenal</title>
-    <link>http://localhost:1313/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 11 Unveiled: A Virtual Machine Running on a Hypervisor?</title>
-      <link>http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</link>
+      <link>//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</guid>
+      <guid>//localhost:1313/posts/2025/march/windows-11-unveiled/windows-11-unveiled/</guid>
       <description>&lt;p&gt;When Microsoft released Windows 11, it came with a slew of new features, a sleek design, and some intriguing system requirements—like the mandatory TPM 2.0 and Secure Boot. But beneath the surface, there’s a theory gaining traction among tech enthusiasts: Is Windows 11 essentially a virtual machine (VM) running on top of a hypervisor? Let’s dive into this concept, explore the evidence, and see what it means for users.&lt;/p&gt;&#xA;&lt;h4 id=&#34;whats-a-hypervisor-anyway&#34;&gt;What’s a Hypervisor, Anyway?&lt;/h4&gt;&#xA;&lt;p&gt;Before we get into Windows 11, let’s clarify what a hypervisor is. A hypervisor is software that creates and manages virtual machines, allowing multiple operating systems to run on a single physical machine. There are two types: Type 1 (bare-metal, like VMware ESXi) and Type 2 (hosted, like VirtualBox). The idea here is that Windows 11 might be leveraging a hypervisor-like architecture to run as a VM, even on your everyday PC.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enhancing Clipboard Management in Kali Linux with Clipman</title>
-      <link>http://localhost:1313/posts/2025/febraury/clipboard-manager/</link>
+      <link>//localhost:1313/posts/2025/febraury/clipboard-manager/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/febraury/clipboard-manager/</guid>
+      <guid>//localhost:1313/posts/2025/febraury/clipboard-manager/</guid>
       <description>&lt;h1 id=&#34;enhancing-clipboard-management-in-kali-linux-with-clipman&#34;&gt;Enhancing Clipboard Management in Kali Linux with Clipman&lt;/h1&gt;&#xA;&lt;p&gt;If you’re a Kali Linux user, you might have noticed that Linux lacks a built-in clipboard manager with a convenient shortcut like Windows + V. This can be frustrating, especially if you&amp;rsquo;re accustomed to managing your clipboard history seamlessly on Windows. To solve this, I’ve developed a simple Clipboard Manager add-on for Kali Linux that integrates Clipman and binds it to the Windows + V shortcut. Let’s dive into the setup and benefits of this handy tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ultimate Powershell Profile</title>
-      <link>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</link>
+      <link>//localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</link>
       <pubDate>Fri, 24 Jan 2025 21:31:01 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</guid>
+      <guid>//localhost:1313/posts/2025/january/ultimate-powershell-profile/ultimate-powershell-profile/</guid>
       <description>&lt;p&gt;PowerShell is already powerful on its own, but with a few tweaks and enhancements, you can transform it into a Linux-like terminal experience—right on your Windows machine. This blog walks you through setting up a custom PowerShell profile that comes preloaded with quality-of-life improvements, aliases, and shortcuts to supercharge your terminal experience.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-one-line-install&#34;&gt;⚡ One-Line Install&lt;/h2&gt;&#xA;&lt;p&gt;Getting started is quick and easy. Open an &lt;strong&gt;elevated PowerShell window&lt;/strong&gt; (run PowerShell as Administrator) and execute the following command:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ultimate ZSH Prompt</title>
-      <link>http://localhost:1313/posts/2025/january/ultimate-zsh-prompt/</link>
+      <link>//localhost:1313/posts/2025/january/ultimate-zsh-prompt/</link>
       <pubDate>Thu, 23 Jan 2025 23:12:09 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2025/january/ultimate-zsh-prompt/</guid>
+      <guid>//localhost:1313/posts/2025/january/ultimate-zsh-prompt/</guid>
       <description>&lt;p&gt;The &lt;code&gt;.zshrc&lt;/code&gt; file is a script that runs every time a new terminal session is started in Unix-like operating systems. It is used to configure the shell session, set up aliases, define functions, and more, making the terminal easier to use and more powerful. Below is a summary of the key sections and functionalities defined in the provided &lt;code&gt;.zshrc&lt;/code&gt; file.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;This sets up myZSH for you. It will backup your current .zshrc if you already have one.&lt;/p&gt;</description>
     </item>
   </channel>
