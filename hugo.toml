@@ -1,4 +1,4 @@
-baseURL = 'its-ashu-otf.github.io'
+baseURL = 'https://its-ashu-otf.github.io'
 defaultContentLanguage = "en"
 languageCode = "en"
 title = "Ashu's 0Day Arsenal"
@@ -40,7 +40,7 @@ utterancesRepo = "its-ashu-otf/its-ashu-otf.github.io"
 # waline = true
 # walineServer = ""
  
-email = "its-ashu-otf@gmail.com"
+email = "itsashuotf@gmail.com"
  
 siteStartYear = 2025
  
