@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kalilinux on Ashu&#39;s 0Day Arsenal</title>
-    <link>//localhost:1313/tags/kalilinux/</link>
+    <link>http://localhost:1313/tags/kalilinux/</link>
     <description>Recent content in Kalilinux on Ashu&#39;s 0Day Arsenal</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2025 21:40:09 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/kalilinux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kalilinux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing the Kali Linux Missing Key APT Repository Error (2025)</title>
+      <link>http://localhost:1313/posts/2025/may/kali-linux-keyring-fix/a-new-kali-linux-archive-signing-key/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025/may/kali-linux-keyring-fix/a-new-kali-linux-archive-signing-key/</guid>
+      <description>&lt;h1 id=&#34;-fixing-the-kali-linux-missing-key-apt-repository-error-2025&#34;&gt;🛠️ Fixing the Kali Linux &amp;ldquo;Missing Key&amp;rdquo; APT Repository Error (2025)&lt;/h1&gt;&#xA;&lt;p&gt;If you recently tried running &lt;code&gt;sudo apt update&lt;/code&gt; on Kali Linux and were greeted with a scary error like this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Missing key 827C8569F2518CC677FECA1AED65462EC8D5E4C5, which is needed to verify signature.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You&amp;rsquo;re &lt;strong&gt;not alone&lt;/strong&gt; — and it’s not your fault. Kali Linux maintainers recently rotated their &lt;strong&gt;repository signing key&lt;/strong&gt;, and that broke package updates for everyone who hadn&amp;rsquo;t yet received the new key.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Enhancing Clipboard Management in Kali Linux with Clipman</title>
-      <link>//localhost:1313/posts/2025/febraury/clipboard-manager/</link>
+      <link>http://localhost:1313/posts/2025/febraury/clipboard-manager/</link>
       <pubDate>Fri, 14 Feb 2025 21:40:09 +0530</pubDate>
-      <guid>//localhost:1313/posts/2025/febraury/clipboard-manager/</guid>
+      <guid>http://localhost:1313/posts/2025/febraury/clipboard-manager/</guid>
       <description>&lt;h1 id=&#34;enhancing-clipboard-management-in-kali-linux-with-clipman&#34;&gt;Enhancing Clipboard Management in Kali Linux with Clipman&lt;/h1&gt;&#xA;&lt;p&gt;If you’re a Kali Linux user, you might have noticed that Linux lacks a built-in clipboard manager with a convenient shortcut like Windows + V. This can be frustrating, especially if you&amp;rsquo;re accustomed to managing your clipboard history seamlessly on Windows. To solve this, I’ve developed a simple Clipboard Manager add-on for Kali Linux that integrates Clipman and binds it to the Windows + V shortcut. Let’s dive into the setup and benefits of this handy tool.&lt;/p&gt;</description>
     </item>
   </channel>
