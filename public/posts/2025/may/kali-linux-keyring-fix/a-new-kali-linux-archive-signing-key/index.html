@@ -29,7 +29,7 @@ You&rsquo;re not alone — and it’s not your fault. Kali Linux maintainers rec
 
 
 
-<meta name="generator" content="Hugo 0.147.1">
+<meta name="generator" content="Hugo 0.152.2">
 
 
 <meta property="og:url" content="http://localhost:1313/posts/2025/may/kali-linux-keyring-fix/a-new-kali-linux-archive-signing-key/">
@@ -94,7 +94,7 @@ You’re not alone — and it’s not your fault. Kali Linux maintainers recentl
 
     
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.1/dist/cdn.min.js" integrity="sha256-Rmqrc5SKeSLTSnQ9shSKWmJco1ks8c1hLI8UG2Np03M=" crossorigin="anonymous"></script>
   </head>
 
   <body x-data="{
@@ -485,6 +485,7 @@ Missing key 827C8569F2518CC677FECA1AED65462EC8D5E4C5
 
   <blockquote>
     <p>“We lost access to the signing key of the repository, so we had to create a new one. […] If the key was compromised, we would have revoked it.”</p>
+
   </blockquote>
 
 <p>As of <strong>Kali 2025.1c</strong>, all new ISOs include the updated keyring. But if you&rsquo;re running an older system, you’ll need to fix it manually.</p>
@@ -562,7 +563,11 @@ Missing key 827C8569F2518CC677FECA1AED65462EC8D5E4C5
     </article>
   </div>
 
-  <div class="hidden lg:flex lg:flex-col lg:items-end">
+  <div
+    x-data="tocHighlighter()"
+    @scroll.window="debouncedScroll"
+    class="hidden lg:flex lg:flex-col lg:items-end"
+  >
     
   </div>
 </div>
@@ -825,7 +830,7 @@ Missing key 827C8569F2518CC677FECA1AED65462EC8D5E4C5
     
 
 
-<script
+  <script
   src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
   integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
   crossorigin="anonymous"
@@ -845,20 +850,26 @@ Missing key 827C8569F2518CC677FECA1AED65462EC8D5E4C5
 
 
 <script>
-  window.customSyntaxHighlighting = {
-    light: "/css/syntax-light.min.css",
-    dark: "/css/syntax-dark.min.css"
-  }
+    window.customSyntaxHighlighting = {
+      light: "/css/syntax-light.min.css",
+      dark: "/css/syntax-dark.min.css"
+    }
 
-  document.addEventListener('alpine:initialized', () => {
-    var isDark = Alpine.store('darkMode').isDark()
-    var customSyntaxHighlightingUrl = isDark ? window.customSyntaxHighlighting.dark : window.customSyntaxHighlighting.light
+    document.addEventListener('alpine:initialized', () => {
+      var isDark = Alpine.store('darkMode').isDark()
+      var customSyntaxHighlightingUrl = isDark ? window.customSyntaxHighlighting.dark : window.customSyntaxHighlighting.light
 
-    document
-      .querySelector('link[data-custom-syntax-highlighting]')
-      .setAttribute('href', customSyntaxHighlightingUrl)
-  })
-</script>
+      document
+        .querySelector('link[data-custom-syntax-highlighting]')
+        .setAttribute('href', customSyntaxHighlightingUrl)
+    })
+  </script>
+
+
+
+
+<script src="/js/toc.js"></script>
+
 
 
 
